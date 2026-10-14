@@ -1,6 +1,87 @@
+:root {
+  --color-accent: #587880;
+}
+
+html {
+  accent-color: var(--color-accent);
+}
 body {
   /* Set line height to 1.5 times the font size
 	   and use the OS’s UI font as the website font
 	 */
   font: 100%/1.5 system-ui;
+  margin-inline: max(1em, (100% - 100ch) / 2);
+}
+
+nav ul, nav li {
+    display: contents;
+}
+
+nav {
+    display: flex;
+    margin-bottom: 2em;
+    border-bottom: 1px solid oklch(80% 3% 200);
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: inherit; 
+    padding: 0.5em;
+}
+
+nav a.current {
+    border-bottom: 0.4em okloch(80% 3% 200);
+    padding-bottom:0.1em;
+}
+
+nav a:hover {
+  border-bottom: 0.4em solid var(--color-accent);
+  padding-bottom: 0.1em;
+  background-color: oklch(from var(--color-accent) 95% 5% h);
+}
+
+input, textarea, button {
+  font: inherit;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+label {
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+label, button {
+  grid-column: 1 / -1;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  
+  article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em;
+
+    h2 {
+  margin: 0;
+    }
+  }
+}
+
+h1 {
+  font-size:400%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
 }

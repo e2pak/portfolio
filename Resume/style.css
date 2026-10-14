@@ -1,3 +1,11 @@
+:root {
+  --color-accent: #587880;
+}
+
+html {
+  accent-color: var(--color-accent);
+}
+
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.4;
@@ -53,4 +61,26 @@ li {
 }
 .bold {
     font-weight: bold;
+}
+nav ul, nav li {
+    display: contents;
+}
+
+nav {
+    display: flex;
+    margin-bottom: 2em;
+    border-bottom: 1px solid oklch(80% 3% 200);
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: inherit; 
+    padding: 0.5em;
+}
+
+nav a.current {
+    border-bottom: 0.4em okloch(80% 3% 200);
+    padding-bottom:4px;
 }

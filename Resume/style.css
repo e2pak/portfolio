@@ -1,16 +1,7 @@
-:root {
-  --color-accent: #587880;
-}
-
-html {
-  accent-color: var(--color-accent);
-}
-
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.4;
     color: #333;
-    max-width: 850px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -62,31 +53,7 @@ li {
 .bold {
     font-weight: bold;
 }
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-nav ul, nav li {
-    display: contents;
-}
-
-nav {
-    display: flex;
-    margin-bottom: 2em;
-    border-bottom: 1px solid oklch(80% 3% 200);
-}
-
-nav a {
-    flex: 1;
-    text-align: center;
-    text-decoration: none;
-    color: inherit; 
-    padding: 0.5em;
-}
-
-nav a.current {
-    border-bottom: 0.4em solid oklch(80% 3% 200);
-    padding-bottom: 4px;
+.resume-container {
+    max-width: 850px;
+    margin: 0 auto;
 }

@@ -165,16 +165,16 @@
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li><bold>Hiding the statistical outliers</bold>: Box plots will show outliers by default. 
+          <li><b>Hiding the statistical outliers</b>: Box plots will show outliers by default. 
             If the outliers were left in, category "True" on the x-axis would have significantly more points of case lengths greater than 25 than category "False". 
             Setting argument `showfliers=False` removes the outliers, and limiting the y-axis to 25 months makes the hiding of the outlier values seem natural. 
             This creates the illusion that both categories share a nearly identical, compact range.</li>
-          <li><bold>Choosing a box plot to emphasize measures of center</bold>:
+          <li><b>Choosing a box plot to emphasize measures of center</b>:
             Because the medians (~9 months for False, ~11 months for True) and IQRs are relatively similar, 
             the box plot naturally minimizes the visual difference between the two groups. 
             This choice leans on legitimate statistical representations to downplay the disparity in case lengths 
             that might be otherwise obvious in a visualization that plots every data point.</li>
-          <li><bold>No indication of sample size</bold>:
+          <li><b>No indication of sample size</b>:
             Omitting sample size (n) creates a false equivalence that helps persuade the reader that they are equally representative.
             In reality, there are 18882 cases where arrest_outcome=True, and there are 14476 cases where arrest_outcome=False. Additionally, there are nearly
             10x as many cases where the case length is greater than 25 when arrest_outcome=True compared to when arrest_outcome=False. However, this is 
@@ -193,19 +193,19 @@
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li><bold>Truncating the Y-axis to exclude the majority of data</bold>:
+          <li><b>Truncating the Y-axis to exclude the majority of data</b>:
             Choosing y-axis limits of 25 to 115 months seems reasonable at first since the proposition implies looking at 
             <u>whether case lengths are longer</u> when an arrest is made. In actuality, beyond y=25 are all outlier values. 
             Therefore, this visualization is a representation of only outlier cases, ignoring the majority of cases in the dataset. 
             A reader seeing how significantly arrest_outcome=True outnumbers arrest_outcome=False might immediately be against the proposition, 
             not realizing the data being shown is not a fair representation of the whole dataset.</li>
-          <li><bold>Using a categorical strip (scatter) plot</bold>: 
+          <li><b>Using a categorical strip (scatter) plot</b>: 
             Plotting every point directly on vertical lines emphasizes extreme values and raw counts rather than statistical averages. 
             Because there are more total cases in the "True" category in general, there are naturally going to be more data points for that category regardless.
             As aforementioned, its number of outliers largely outnumbers that of arrest_outcome=False, so this only exacerbates the number difference.
             Therefore, a strip plot makes the raw volume of long cases for arrest_outcome=True feel more visceral. <br>
             I tried using a box plot on these outlier data points, but it was not usable because there were not enough data points for arrest_outcome=False.</li>
-          <li><bold>No indication of sample size</bold>:
+          <li><b>No indication of sample size</b>:
             A reader might take the obvious difference in number of data points between the two categories at face value, 
             not realizing it's not necessarily a fair representation considering there are 18882 cases where arrest_outcome=True 
             compared to 14476 cases where arrest_outcome=False. Additionally, there are nearly

@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Project 1: Expository Visualization",
+        "year": "2026",
+        "image": "../images/Project_1.png",
+        "description": "Kernel Density Estimate plots showing the distribution of food product prices for Walmart, Target, and Whole Foods. Walmart is the most affordable, followed by Target, then Whole Foods, when looking at all available store inventory. Filtering by each store's private-label food brands reveals that Target and Whole Foods are identical."
+    },
+    {
+        "title": "Project 2: Deceptive Visualization",
+        "year": "2026",
+        "image": "../images/for_proposition.png",
+        "description": "Two visualizations produced from the same NYPD Civilian Complaint Dataset that elude to two opposing stances regarding whether the lengths of cases differ depending on if an arrest was made."
+    },
+    {
+        "title": "Project 3: Interactive Visualization",
+        "year": "2026",
+        "image": "../images/Project_3.png",
+        "description": "WIP. Using D3.js to create interactive visualizations to answer a hypothesis. Currently considering using a carbon emissions dataset."
+    },
+    {
+        "title": "Seismic Wave Arrival Prediction",
+        "year": "2026",
+        "image": "../images/earthquake.png",
+        "description": "Deep neural network that predicts the arrival times of earthquakes’ secondary waves. Developed a distributed machine learning pipeline using PySpark and Ray.io that processes over 1.2 million earthquake events and 7.6 billion waveform samples. Final model average test loss: 0.013 secs compared to baseline test loss: 4.37 secs. Seismic wave arrival time predicted with 98.4% accuracy."
+    },
+    {
+        "title": "Antimicrobial Peptide Profiling/Classification",
+        "year": "2024",
+        "image": "../images/Senior_Project.png",
+        "description": "Built CNN and LSTM models to identify antimicrobial peptides (AMPs) from large-scale protein sequence data. Identified 2–4% of protein sequences per species as AMPs using >99% confidence threshold for classification. Eukaryotes show the highest AMP density and viruses show minimal presence."
+    },
+    {
+        "title": "Patient Stroke Prediction Model",
+        "year": "2023",
+        "image": "../images/Stroke_Prediction.png",
+        "description": "Built a Decision Tree classifier to predict stroke occurrence using an EHR dataset of 38,281 patient records. BMI and Glucose levels are found to be the greatest indicators of stroke occurrence. Model metrics: 93.2% prediction accuracy; 99.5% of actual strokes were correctly predicted, and 85.6% of stroke predictions were actual strokes."
+    },
+    {
+        "title": "Interactive NBA Trade US Map",
+        "year": "2023",
+        "image": "../images/NBA_Trades.png",
+        "description": "An interactive US map consisting of nodes and links that respectively represent NBA teams and their trade relations with each other."
+    },
+    {
+        "title": "Spatial Analysis of Oakland Crime",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Identified the highest contributing factors to crime in Oakland through spatial data analysis with ArcGIS and a Machine Learning classification model using Support Vector Machines (SVM)."
+    },
+    {
+        "title": "Predictive Song Recommending Discord Bot",
+        "year": "2022",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Developed a Discord bot that suggests music based on quantitative data about the current song playing on the user’s Spotify.  Song similarity is determined via a clustering method."
+    },
+    {
+        "title": "RoseHack Project: Spotify Playlist Generated from User Mood",
+        "year": "2022",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created an app that curates a Spotify playlist depending on the mood expressed by the user’s facial expression (captured by the device camera). It utilizes a ML model that determines a person’s face as either happy or sad. My contribution was in making calls to the Spotify API, training the model, and debugging the GUI."
+    },
+    {
+        "title": "Analysis of Customer Reviews on Second-Hand Apparel",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Comparing three different ML models' performances in predicting the sentiment of Amazon customer reviews on second-hand apparel."
+    },
+    {
+        "title": "DSC 209R Final Project",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Ducimus cupiditate, totam incidunt aliquam itaque ratione, soluta unde labore, illo sapiente perspiciatis assumenda sequi ipsum fugit adipisci pariatur quia commodi voluptatibus id amet minima earum. Veritatis officia facere eum!"
+    }
+]

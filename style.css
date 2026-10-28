@@ -100,3 +100,22 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     text-wrap: balance;
 }
+
+/* Target the definition list injected into the profile-stats div */
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Github terms (labels) to the first row */
+#profile-stats dt {
+  grid-row: 1;
+  font-weight: bold;
+}
+
+/* Github descriptions (numbers) to the second row */
+#profile-stats dd {
+  grid-row: 2;
+  margin: 0; /* Removes default browser margin on dd elements */
+}

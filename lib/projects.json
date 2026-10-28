@@ -2,43 +2,43 @@
     {
         "title": "Project 1: Expository Visualization",
         "year": "2026",
-        "image": "../images/Project_1.png",
+        "image": "images/Project_1.png",
         "description": "Kernel Density Estimate plots showing the distribution of food product prices for Walmart, Target, and Whole Foods. Walmart is the most affordable, followed by Target, then Whole Foods, when looking at all available store inventory. Filtering by each store's private-label food brands reveals that Target and Whole Foods are identical."
     },
     {
         "title": "Project 2: Deceptive Visualization",
         "year": "2026",
-        "image": "../images/for_proposition.png",
+        "image": "images/for_proposition.png",
         "description": "Two visualizations produced from the same NYPD Civilian Complaint Dataset that elude to two opposing stances regarding whether the lengths of cases differ depending on if an arrest was made."
     },
     {
         "title": "Project 3: Interactive Visualization",
         "year": "2026",
-        "image": "../images/Project_3.png",
+        "image": "images/Project_3.png",
         "description": "WIP. Using D3.js to create interactive visualizations to answer a hypothesis. Currently considering using a carbon emissions dataset."
     },
     {
         "title": "Seismic Wave Arrival Prediction",
         "year": "2026",
-        "image": "../images/earthquake.png",
+        "image": "images/earthquake.png",
         "description": "Deep neural network that predicts the arrival times of earthquakes’ secondary waves. Developed a distributed machine learning pipeline using PySpark and Ray.io that processes over 1.2 million earthquake events and 7.6 billion waveform samples. Final model average test loss: 0.013 secs compared to baseline test loss: 4.37 secs. Seismic wave arrival time predicted with 98.4% accuracy."
     },
     {
         "title": "Antimicrobial Peptide Profiling/Classification",
         "year": "2024",
-        "image": "../images/Senior_Project.png",
+        "image": "images/Senior_Project.png",
         "description": "Built CNN and LSTM models to identify antimicrobial peptides (AMPs) from large-scale protein sequence data. Identified 2–4% of protein sequences per species as AMPs using >99% confidence threshold for classification. Eukaryotes show the highest AMP density and viruses show minimal presence."
     },
     {
         "title": "Patient Stroke Prediction Model",
         "year": "2023",
-        "image": "../images/Stroke_Prediction.png",
+        "image": "images/Stroke_Prediction.png",
         "description": "Built a Decision Tree classifier to predict stroke occurrence using an EHR dataset of 38,281 patient records. BMI and Glucose levels are found to be the greatest indicators of stroke occurrence. Model metrics: 93.2% prediction accuracy; 99.5% of actual strokes were correctly predicted, and 85.6% of stroke predictions were actual strokes."
     },
     {
         "title": "Interactive NBA Trade US Map",
         "year": "2023",
-        "image": "../images/NBA_Trades.png",
+        "image": "images/NBA_Trades.png",
         "description": "An interactive US map consisting of nodes and links that respectively represent NBA teams and their trade relations with each other."
     },
     {

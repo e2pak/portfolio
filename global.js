@@ -105,16 +105,18 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
   }
 
   containerElement.innerHTML = '';
+  for (let p of project) {
   const article = document.createElement('article');
   
   // Use template literals to dynamically inject the heading tag
   article.innerHTML = `
-    <${headingLevel}>${project.title}</${headingLevel}>
-    <img src="${project.image}" alt="${project.title}">
-    <p>${project.description}</p>
+    <${headingLevel}>${p.title}</${headingLevel}>
+    <img src="${p.image}" alt="${p.title}">
+    <p>${p.description}</p>
   `;
   
   containerElement.appendChild(article);
+  }
 }
 
 export async function fetchGitHubData(username) {

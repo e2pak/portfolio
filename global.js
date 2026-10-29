@@ -107,7 +107,7 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
   for (let p of project) {
   const article = document.createElement('article');
-  
+
   // Use template literals to dynamically inject the heading tag
   article.innerHTML = `
     <${headingLevel}>${p.title}</${headingLevel}>

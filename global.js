@@ -107,11 +107,12 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
   for (let p of project) {
   const article = document.createElement('article');
+  const imageUrl = new URL(p.image, import.meta.url);
 
   // Use template literals to dynamically inject the heading tag
   article.innerHTML = `
     <${headingLevel}>${p.title}</${headingLevel}>
-    <img src="${p.image}" alt="${p.title}">
+    <img src="${imageUrl}" alt="${p.title}">
     <p>${p.description}</p>
   `;
   

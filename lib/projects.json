@@ -1,18 +1,18 @@
 [
     {
-        "title": "Project 1: Expository Visualization",
+        "title": "DSC_209R Project 1: Expository Visualization",
         "year": "2026",
         "image": "images/Project_1.png",
         "description": "Kernel Density Estimate plots showing the distribution of food product prices for Walmart, Target, and Whole Foods. Walmart is the most affordable, followed by Target, then Whole Foods, when looking at all available store inventory. Filtering by each store's private-label food brands reveals that Target and Whole Foods are identical."
     },
     {
-        "title": "Project 2: Deceptive Visualization",
+        "title": "DSC_209R Project 2: Deceptive Visualization",
         "year": "2026",
         "image": "images/for_proposition.png",
         "description": "Two visualizations produced from the same NYPD Civilian Complaint Dataset that elude to two opposing stances regarding whether the lengths of cases differ depending on if an arrest was made."
     },
     {
-        "title": "Project 3: Interactive Visualization",
+        "title": "DSC_209R Project 3: Interactive Visualization",
         "year": "2026",
         "image": "images/Project_3.png",
         "description": "WIP. Using D3.js to create interactive visualizations to answer a hypothesis. Currently considering using a carbon emissions dataset."

@@ -157,6 +157,33 @@ h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
 }
 
+dl.info {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5em 1em;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+dl.info dt,
+dl.info dd {
+  margin: 0;
+}
+
+dl.info dt {
+  color: #777;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+}
+
 /* Target the definition list injected into the profile-stats div */
 #profile-stats dl {
   display: grid;
@@ -174,4 +201,77 @@ h1, h2, h3, h4, h5, h6 {
 #profile-stats dd {
   grid-row: 2;
   margin: 0; /* Removes default browser margin on dd elements */
+}
+
+/* Target the definition list injected into the profile-stats div */
+#stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Github terms (labels) to the first row */
+#stats dt {
+  grid-row: 1;
+  font-weight: bold;
+}
+
+/* Github descriptions (numbers) to the second row */
+#stats dd {
+  grid-row: 2;
+  margin: 0; /* Removes default browser margin on dd elements */
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+#commit-tooltip {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+#language-breakdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+#language-breakdown dt {
+  grid-row: 1;
+  font-weight: bold;
+}
+
+#language-breakdown dd {
+  grid-row: 2;
+  margin: 0; 
 }

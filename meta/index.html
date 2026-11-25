@@ -11,23 +11,50 @@
 <body>
 	<h1>Meta</h1>
 	<p>This page includes stats about the code of this website.</p>
+    <div>
+        <label>
+            Show commits until:
+            <input id="commit-progress" type="range" min="0" max="100" value="100" />
+            <time id="commit-time"></time>
+        </label>
+    </div>
+    <dl id="files">
+        <!-- we want the following structure for each file:
+        <div>
+            <dt>
+            <code>{file.name}</code>
+            <small>{file.lines.length} lines</small>
+            </dt>
+            <dd>
+                <div class="loc"></div>
+            </dd>
+        </div>
+        -->
+    </dl>
     <div id="stats"></div><br>
 
-    <h2>Commits by time of day</h2>
-    <div id="chart"></div>
+    <div id="scrolly-1">
+        <div id="scatter-story">
+            <p>Explore commits by time of day. Brush the chart to see details about selected commits. As you scroll up and down the commit descriptions, you should see an object logged each time a commit crosses the mid-point of the screen.</p>
+        </div>
+        <div id="scatter-plot">
+            <h2>Commits by time of day</h2>
+            <div id="chart"></div>
 
-    <dl id="commit-tooltip" class="info tooltip" hidden>
-    <dt>Commit</dt>
-    <dd>
-        <a href="" id="commit-link" target="_blank"></a>
-    </dd>
+            <dl id="commit-tooltip" class="info tooltip" hidden>
+                <dt>Commit</dt>
+                <dd>
+                    <a href="" id="commit-link" target="_blank"></a>
+                </dd>
 
-    <dt>Date</dt>
-    <dd id="commit-date"></dd>
+                <dt>Date</dt>
+                <dd id="commit-date"></dd>
+            </dl>
 
-    <!-- Add: Time, author, lines edited -->
-    </dl>
-    <p id="selection-count">No commits selected</p>
-    <dl id="language-breakdown" class="stats"></dl>
+            <p id="selection-count">No commits selected</p>
+            <dl id="language-breakdown" class="stats"></dl>
+        </div>
+    </div>
+
 </body>
 </html>
